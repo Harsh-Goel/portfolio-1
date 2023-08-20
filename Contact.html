@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="sidebar sidebar_go">
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="service.html" target="_blank">Services</a></li>
+          <li><a href="Contact.html" target="_blank">Contact Me</a></li>
+          <li><a href="Cv.html" target="_blank">CV</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="line" src="pics/line.png" alt="ham" width="23px">
+        <img class="cross" src="pics/cross.png" alt="cross" width="23px">
+      </div>
+      <div class="contactform">
+        <h2>Contact me for work or General enquiries</h2>
+        <form>
+          <div class="form-group1">
+            <label for="client_name">Name</label>
+            <input type="name" class="form-control" id="client_name">
+
+          </div>
+          <div class="form-group1">
+            <label for="client_email">Email address</label>
+            <input type="email" class="form-control" id="client_email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"><br>We'll never share your email and phone with anyone
+              else.</small>
+          </div>
+          <div class="form-group1">
+            <label for="client_form">Phone</label>
+            <input type="phone" class="form-control" id="client_form">
+          </div>
+          <div class="form-group1">
+            <label for="client_enquiry">Enquiry</label>
+            <input type="name" class="form-control" id="client_enquiry">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id"isClient">
+            <label class="form-check-label" for"isClient">I want you to work with me on a project</label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

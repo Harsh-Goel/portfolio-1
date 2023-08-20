@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    /* background-color: aqua; */
+    background-color: lightgray;
+    width: 244px;
+    height: 100vh;
+    font-family: 'Gloock', serif;
+    position: fixed;
+    /* position: fixed;
+    overflow: hidden; */
+    transition: transform 0.25s ease-in;
+}
+
+.sidebar nav {
+    height: 100vh;
+
+    /* font-family: 'Gloock', serif; */
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: large;
+    margin: 25px 0px 0px 0px;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sidebar nav li a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    /* transition: transform 0.2s ease-in; */
+    width: 70vw;
+    font-size: 100%;
+
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    width: 70vw;
+    background-color: whitesmoke;
+    font-family: 'PT Serif', serif;
+    height: 50vh;
+    margin-top: 70px;
+    margin-left: 250px;
+
+}
+
+.devinfo {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar nav li:hover {
+    background-color: gray;
+
+}
+
+.contactform {
+    font-size: 100%;
+    font-family: 'Gloock', serif;
+    margin-left: 300px;
+
+}
+
+.contactform h2 {
+
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+.contactform form {
+
+    margin: 20px;
+
+    padding: 5px;
+    background-color: whitesmoke;
+    font-size: large;
+}
+
+.form-group1 {
+
+    display: flex;
+    margin: 20px 0px 20px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#emailHelp {
+    font-size: small;
+    color: gray;
+}
+
+.form-control {
+    height: 20px;
+    width: 30vw;
+    border-radius: 5px;
+    font-size: large;
+    border-width: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 80px;
+    color: black;
+    background-color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.blogcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-left: 250px;
+}
+
+.blogcontainer h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: darkgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.blog_item {
+    margin: 25px;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+
+.blog_item h2 {
+    font-family: 'Playfair Display', serif;
+    background-color: lightgrey;
+    width: 15vw;
+
+
+}
+
+.blog_item p {
+    margin: 10px 10px 0px 0px;
+    font-size: large;
+
+}
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    left: 1px;
+}
+
+.sidebar_go {
+    transform: translate(-244px, 0px);
+    position: absolute;
+}
+
+.cross {
+
+    margin-top: 5px;
+    margin-left: 218px;
+}
+
+@media(max-width:1000px) {
+
+    .main {
+        padding: 50px;
+    }
+
+    .infocontainer,
+    .blogcontainer,
+    .contactform {
+
+        margin: 20px 10px;
+
+    }
+
+}
